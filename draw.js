@@ -21,8 +21,7 @@ var snake;
     }
 
     snake.checkCollision();
-    document.querySelector('.score')
-      .innerText = snake.total;
+    document.querySelector('.score').innerText = snake.total;
 
   }, 250);
 }());
