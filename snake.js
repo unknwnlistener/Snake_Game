@@ -69,6 +69,10 @@ function Snake() {
     if (this.x === fruit.x &&
       this.y === fruit.y) {
       this.total++;
+      if(this.ySpeed == 0)
+        this.xSpeed *= 1.5;
+      else
+        this.ySpeed *= 1.5;
       return true;
     }
 
