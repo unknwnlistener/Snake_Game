@@ -11,30 +11,29 @@
   body {
     background: #20D1FD;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   canvas {
     border: 1px solid white;
   }
-  .score{
+  .score {
     font-family: 'Courier New', Courier, monospace;
-    margin-left: 5%;
-    font-size: 1000%;
+    font-size: 72pt;
     color: #9040F8;
   }
-  
   </style>
 </head>
 <body>
-
+  <h1 class="score"></h1>
   <canvas
     class="canvas"
-    height="800"
+    height="700"
     width="1300"
     style="background-color: #9040F8">
   </canvas>
-  <h1 class="score"></h1>
+
 </body>
 <script type="text/javascript" src="fruit.js"></script>
 <script type="text/javascript" src="snake.js"></script>
