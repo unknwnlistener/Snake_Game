@@ -7,4 +7,4 @@ A version of the popular [video game genre](<https://en.wikipedia.org/wiki/Snake
 
 ## Setup
 
-To play the game, download (and unpack) this folder. Open index.html and you're ready to play. Move the snake with arrow keys (up, wodn, left, right). Your current score is displayed on the right panel.
+To play the game, download (and unpack) this folder. Open index.html and you're ready to play. Move the snake with arrow keys (up, down, left, right). Your current score is displayed on the right panel.
