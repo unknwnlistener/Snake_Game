@@ -23,9 +23,42 @@
     font-size: 32pt;
     color: #9040F8;
   }
+  .navbar {
+    background: black;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: fit-content;
+    color: white;
+    padding: 2px;
+    align-items: center;
+    
+  }
+  .navbar-links {
+    font-family: 'Courier New', Courier, monospace ;
+    padding: 10px;
+    font-size: 32pt;
+    float: left;
+    text-align: center;
+    border-left: solid 1px #9040F8;
+    border-right: solid 1px #9040F8;
+  }
+  .navbar-links:hover {
+    background-color: #20D1FD;
+    color: black;
+  }
+  #brand {
+    font-weight: bold;
+  }
+  
   </style>
 </head>
 <body>
+  <nav class="navbar">
+    <a class="navbar-links" id="brand">SnakyJS</a>
+    <a class="navbar-links" id="new-game" onclick="reload()">New Game</a>
+    <a class="navbar-links" id="about">About</a>
+  </nav>
   <h1 class="score"></h1>
   <canvas
     class="canvas"
@@ -35,6 +68,12 @@
   </canvas>
 
 </body>
+<script type=text/javascript>
+  function reload() {
+    var canvas = document.getElementsByClassName("canvas")
+    location.reload()
+  }
+</script>
 <script type="text/javascript" src="fruit.js"></script>
 <script type="text/javascript" src="snake.js"></script>
 <script type="text/javascript" src="draw.js"></script>
