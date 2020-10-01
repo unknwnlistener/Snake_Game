@@ -1,91 +1,90 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Snake Game</title>
-    <style>
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-      }
+<head>
+  <title>Snake Game</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
 
+    body {
+      background: #20d1fd;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    canvas {
+      border: 1px solid white;
+    }
+    .game {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .rules {
+      width: 250px;
+      margin: 10px;
+      padding: 10px;
+      border: 2px solid #e59500;
+      order: 2;
+    }
+    .rules h1 {
+      margin-top: 0;
+      color: #9040f8;
+    }
+    .rules ul {
+      padding-inline-start: 1.5em;
+    }
+    @media (max-width: 750px) {
       body {
-        background: #20d1fd;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-      }
-      canvas {
-        border: 1px solid white;
-      }
-      .game {
-        display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: space-between;
       }
       .rules {
-        width: 250px;
-        margin: 10px;
-        padding: 10px;
-        border: 2px solid #e59500;
+        order: 0;
+      }
+      .game {
         order: 2;
       }
-      .rules h1 {
-        margin-top: 0;
-        color: #9040f8;
-      }
-      .rules ul {
-        padding-inline-start: 1.5em;
-      }
-      @media (max-width: 750px) {
-        body {
-          flex-direction: column;
-          justify-content: space-between;
-        }
-        .rules {
-          order: 0;
-        }
-        .game {
-          order: 2;
-        }
-      }
-      .score {
-        font-family: "Courier New", Courier, monospace;
-        font-size: 32pt;
-        color: #9040f8;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="game">
-      <h1 class="score"></h1>
-      <canvas
-        class="canvas"
-        height="400"
-        width="500"
-        style="background-color: #9040f8"
-      >
-      </canvas>
-    </div>
-    <div class="rules">
-      <h1>Rules</h1>
-      <p>
-        Move your snake around with <strong>up</strong>, <strong>down</strong>,
-        <strong>left</strong> and <strong>right</strong> arrows in order to eat
-        snacks.
-      </p>
-      <p>
-        Every time you successfully eat a <strong>snack</strong>, your snake
-        becomes bigger.
-      </p>
-      <p>
-        The goal of the game is to try to make your snake as big as possible and
-        beat your highscore!
-      </p>
-    </div>
-  </body>
-  <script type="text/javascript" src="fruit.js"></script>
-  <script type="text/javascript" src="snake.js"></script>
-  <script type="text/javascript" src="draw.js"></script>
+    }
+    .score {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 32pt;
+      color: #9040f8;
+    }
+  </style>
+</head>
+<body>
+  <div class="game">
+    <h1 class="score"></h1>
+    <canvas
+      class="canvas"
+      height="400"
+      width="500"
+      style="background-color: #9040f8"
+    >
+    </canvas>
+  </div>
+  <div class="rules">
+    <h1>Rules</h1>
+    <p>
+      Move your snake around with <strong>up</strong>, <strong>down</strong>,
+      <strong>left</strong> and <strong>right</strong> arrows in order to eat
+      snacks.
+    </p>
+    <p>
+      Every time you successfully eat a <strong>snack</strong>, your snake
+      becomes bigger.
+    </p>
+    <p>
+      The goal of the game is to try to make your snake as big as possible and
+      beat your highscore!
+    </p>
+  </div>
+</body>
+<script type="text/javascript" src="fruit.js"></script>
+<script type="text/javascript" src="snake.js"></script>
+<script type="text/javascript" src="draw.js"></script>
 </html>
